@@ -12,5 +12,10 @@ body {
 }
 
 .margin {
+    padding-top: 10px;
     padding-bottom: 50px;
+}
+
+.parceiros {
+    background-color: lightblue;
 }
