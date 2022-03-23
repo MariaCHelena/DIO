@@ -1,0 +1,36 @@
+<!-- FLEXBOX
+
+A propriedade "flexbox" no CSS permite tornar div, span, a... em flex-container,
+o que atribui aos seus filhos a característica de flex-item, organizando a dis-
+pozição destes itens dentro do flex-container. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Flexbox</title>
+		
+		<style>
+			.flex{
+				display: flex;
+				/* Todos os itens filhos do .flex vão receber a característica de
+				flex-item */
+				/* flex-itens também podem se tornar flex-containers */
+				flex-direction: row;
+				/* Deve sempre ser aplicado no flex-container.
+				*/
+				/* flex-direction vai definir qual vai ser a direção que os itens do
+				flex-container vão ser exibidos:
+				row(padrão) - serão exibidos em linha;
+				column - serão exibidos em coluna;
+				row-reverse - serão exibidos em linha no sentido oposto à direção do texto;
+				column-reverse - serão exibidos em coluna no sentido oposto à direção do texto. */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex">
+			<div>item</div>
+			<div>item</div>
+			<div>item</div>
+		</div>
+	</body>
+</html>
