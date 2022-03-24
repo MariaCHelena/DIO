@@ -23,6 +23,12 @@ pozição destes itens dentro do flex-container. -->
 				column - serão exibidos em coluna;
 				row-reverse - serão exibidos em linha no sentido oposto à direção do texto;
 				column-reverse - serão exibidos em coluna no sentido oposto à direção do texto. */
+				flex-wrap: nowrap;
+				/* Flex-wrap é a propriedade que define se os itens devem ou não quebrar a linha.
+				por padrão eles não quebram linhas, isso faz com que os itens sejam compactados além do limite do conteúdo.
+				nowrap(padrão) - não pertime a quebra de linha;
+				wrap - permite a quebra de linha. A partir do primeiro elemento que não consiga ser comportado dentro do flexbox, o item será lançado para a linha de baixo;
+				wrap-reverse - mesma lógica do wrap, mas na direção contrária da linha, acima.*/
 			}
 		</style>
 	</head>

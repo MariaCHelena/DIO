@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rascunho003</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverso{
+            flex-wrap: wrap-reverse;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        no wrap
+    </h1>
+
+    <div class="flex-container nowrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">3</div>
+    </div>
+
+    <h1>wrap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">3</div>
+    </div> <!--Se a altura dos itens for maior que a altura do container, os itens vão vazar -->
+
+    <h1>wrap reverso</h1>
+
+    <div class="flex-container wrap-reverso">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">3</div>
+    </div>
+
+    <h2>---------------COLUMN------------------</h2>
+    
+    <h1>
+        no wrap
+    </h1>
+
+    <div class="flex-container nowrap column">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">3</div>
+    </div>
+
+    <h1>wrap</h1>
+
+    <div class="flex-container wrap column">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">3</div>
+    </div> <!--Se a altura dos itens for maior que a altura do container, os itens vão vazar -->
+
+    <h1>wrap reverso</h1>
+
+    <div class="flex-container wrap-reverso column">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item blue">3</div>
+    </div>
+
+</body>
+</html>
