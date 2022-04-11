@@ -65,6 +65,21 @@ pozição destes itens dentro do flex-container. -->
 				flex-end - alinhamento dos itens no final;
 				space-between - cria um espaçamento igual entre os elementos;
 				space-around - os espaçamento são duas vezes maiores que o inicial e o final.*/
+
+				flex-grow: 0;
+				/*É aplicado nos itens do flex-box, e trata a proporcionalidade do crescimento deles.
+				O flex-grow 0 é o padrão, mas a partir do 1, os itens passarão a ocupar todo o espaço possível no flex-box.
+				Com o flex-grow a partir do 1, a propriedade 'justify-content' não é aplicada*/
+
+				flex-basis: auto;
+				/*É a propriedade que estabelece o tamanho inicial do item antes da distribuição de espaço restante dentro dele, usando como base o conteúdo interno disposto.
+				auto - caso o item não tenha tamanho, este será proporcional ao conteúdo do item;
+				px, %, em, ... - são valores exatos previamente definidos;
+				0(zero) - terá relação com a definição do flex-grow.*/
+
+				flex-shrink: auto;
+				/*É a propriedade que estabelece a capacidade de redução ou compressão do tamanho de um item.
+				*/
 			}
 		</style>
 	</head>
