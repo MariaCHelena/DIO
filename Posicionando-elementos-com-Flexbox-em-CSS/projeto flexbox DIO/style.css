@@ -19,6 +19,8 @@ ul li a{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
+    padding: 10px 15px;
 }
 
 header{
@@ -34,6 +36,7 @@ header .list-items{
     max-width: 260px;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .list-items li a{
@@ -42,6 +45,11 @@ header .list-items{
 
 header .menu{
     justify-content: space-between;
+}
+
+div img{
+    display: block;
+    width: 100%;
 }
 
 .apresentacao{
@@ -60,7 +68,7 @@ header .menu{
     margin-bottom: 10px;
 }
 
-.texto-apresentacao a{
+.btn{
     background-color: #122a57;
     color: #fff;
     text-align: center;
@@ -72,4 +80,214 @@ header .menu{
     line-height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#quem-somos{
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos h2{
+    font-size: 32px;
+    color: #122a57;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#quem-somos h2::before{
+    content: '';
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122a57;
+    position: relative;
+
+}
+
+#quem-somos p{
+    margin-top: 10px;
+    width: 90%;
+}
+
+#quem-somos img{
+    min-width: 400px;
+}
+
+.container-externo{
+    background-color: #122a57;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding: 50px 0 100px;
+}
+
+#servicos h2{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.list-servicos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-servicos .items-servicos{
+    text-align: center;
+}
+
+.items-servicos a{
+    width: 220px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    color: #122a57;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.items-servicos p{
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.items-servicos img{
+    width: 80%;
+    margin: auto;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#planos h2{
+    font-size: 32px;
+}
+
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.items-planos{
+    flex: 1;
+    border: 5px solid #122a57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+.items-planos .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.items-planos h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.items-planos h3::after{
+    content: '';
+    background-color: #122a57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.items-planos ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.items-planos ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.items-planos ul li::before{
+    content:'';
+    width: 8px;
+    height: 8px;
+    background-color: #122a57;
+    margin-right: 5px;
+}
+
+footer{
+    background-color: #122a57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .rodape{
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* mobile */
+
+@media(max-width: 992px) {
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao{
+        width: 100%;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .list-servicos{
+        flex-direction: column;
+    }
+
+    .items-servicos img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .items-planos{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+    }
 }
