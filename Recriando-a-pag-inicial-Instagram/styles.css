@@ -42,7 +42,6 @@ body{
     justify-content: space-around;
     flex-direction: column;
     width: 50%;
-    min-height: 34rem;
 }
 
 .group{
@@ -56,8 +55,27 @@ body{
     border: 1px solid lightgray;
 }
 
+.content{
+    width: 100%;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.text-field{
+    width: 70%;
+    padding: 5px;
+}
+
 .group:nth-child(1){
     min-height: 19rem;
+    flex: 2;
+    margin-bottom: 1rem;
 }
 
 .instagram-logo {
@@ -79,8 +97,8 @@ body{
 .instagram-login{
     background-color: #0095f6;
     color: white;
-    padding: 8px;
     border-radius: 4px;
+    text-align: center;
 }
 
 .instagram-logout{
